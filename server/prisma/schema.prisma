@@ -49,6 +49,7 @@ model Category {
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("update_at")
 
+  slug     String    @unique
   name     String    @unique
   products Product[]
 }
